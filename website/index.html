@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head>
+  <title>Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/keys.js"  type="text/javascript" defer ></script>
+  <script src="js/app.mjs"  type="text/javascript" defer ></script>
+  <script src="js/check.js"  type="text/javascript" defer ></script>
+</head><body>
+
+  <div id="app">
+    <div class="holder headline"><h1>Weather Journal App</h1> </div>
+
+    <button class="sgt" onclick="sgt()">suggest Number</button>
+
+    <div class="holder id">
+      <label for="id">Enter City ID here</label>
+      <input type="text" id="cid" onchange="myFunction()"  >
+    </div>
+
+    <div class="holder feel">
+      <label for="feelings">How are you feeling today?</label>
+      <textarea class="myInput" id="feelings" placeholder="write how you feel now" rows="5" cols="40"></textarea>
+    </div>
+
+    <div  class="holder button">
+      <button id="generate" type="submit" onclick="myFunction()">Generate</button>
+    </div>
+
+    <div class="holder entry">
+      <div class="title">Most Recent Entry</div>
+      <div id="entryHolder">
+        <div id="date"></div>
+        <div id="temp"></div>
+        <div id="content"></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
